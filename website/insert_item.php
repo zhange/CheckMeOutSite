@@ -32,5 +32,4 @@
     $itemlink = $_POST['itemLink'];    
 
     OpenConnectionItem();
-
 ?>
