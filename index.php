@@ -24,7 +24,7 @@
     //Insert query
     $results = mssql_result ($tsql, $conn);
 
-    echo($results);
+    echo($results[0]);
     ?>
 
     <form action="/website/insert.php" method="POST">
