@@ -11,8 +11,11 @@
         
         $conn = sqlsrv_connect($serverName, $connectionOptions);
         if($conn == false){
-            echo "string";
+            echo "HELLO";
             die(FormatErrors(sqlsrv_errors()));
+        }
+        else{
+            echo "HELLO WORLD";
         }
 
         $lockid = $_POST['lockId']
