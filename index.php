@@ -20,14 +20,10 @@
     
     echo(" COOLIO ");
     // This SQL statement selects ALL from the table 'Locations'
-    $query = mssql_query('SELECT [Lock_ID] FROM [checkmeout].[Inventory]');
-     echo(" klk ");
-   if (!mssql_num_rows($query)) {
-    echo 'No records found';
-   } else {
-        echo 'records found';
-
-          }
+    $tsql = "SELECT * FROM [checkmeout].[Inventory];";
+    //Insert query
+    
+    echo(count($tsql));
     ?>
 
     <form action="/website/insert.php" method="POST">
