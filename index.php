@@ -20,7 +20,7 @@
     
 
     // This SQL statement selects ALL from the table 'Locations'
-    $sql = 'SELECT * FROM [checkmeout].[Inventory]';
+    $sql = 'SELECT * FROM [Inventory]';
      
     // Check if there are results
     $result = sqlsrv_query($conn, $tsql);
