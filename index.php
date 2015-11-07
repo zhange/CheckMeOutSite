@@ -23,7 +23,7 @@
     $sql = 'SELECT * FROM [checkmeout].[Inventory]';
      
     // Check if there are results
-    $result = sqlsrv_query($conn, $tsql);
+    $result = sql_query($conn, $tsql);
     print($result);
     ?>
 
