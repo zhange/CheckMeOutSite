@@ -12,24 +12,24 @@
         if($conn == false){
             die(FormatErrors(sqlsrv_errors()));
         }
-        $itemid = $_POST["itemID"];
-        $storeid = $_POST["storeID"];
-        $itemname = $_POST["itemName"];
-        $itemdesc = $_POST["itemDescription"];
-        $itemprice = $_POST["itemPrice"];
-        $itemlink = $_POST["itemLink"]; 
+        $itemid = $_POST['itemID'];
+        $storeid = $_POST['storeID'];
+        $itemname = $_POST['itemName'];
+        $itemdesc = $_POST['itemDescription'];
+        $itemprice = $_POST['itemPrice'];
+        $itemlink = $_POST['itemLink']; 
 
         $tsql = "INSERT INTO [checkmeout].[Items] VALUES ($itemid, $storeid, $itemname, $itemdesc, $itemprice, $itemlink);";
         //Insert query
         $insertReview = sqlsrv_query($conn, $tsql);
     }
 
-    $storeid = $_POST["storeID"];
-    $itemid = $_POST["itemID"];
-    $itemname = $_POST["itemName"];
-    $itemdesc = $_POST["itemDescription"];
-    $itemprice = $_POST["itemPrice"];
-    $itemlink = $_POST["itemLink"];    
+    $storeid = $_POST['storeID'];
+    $itemid = $_POST['itemID'];
+    $itemname = $_POST['itemName'];
+    $itemdesc = $_POST['itemDescription'];
+    $itemprice = $_POST['itemPrice'];
+    $itemlink = $_POST['itemLink'];    
 
     OpenConnectionItem();
 
