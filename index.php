@@ -22,9 +22,9 @@
 
         //$lockid = $_POST['lockID']
         //$itemid = $_POST['itemID']
-        $tsql = "INSERT checkmeout_db.Inventory ("Lock_ID", "Item_ID")
-        VALUES (100, 200) GO";
-        $result = sqlsrv_query($conn, $tsql);
+        $tsql = "INSERT INTO [checkmeout].[Inventory] VALUES (200,300);";
+        //Insert query
+        $insertReview = sqlsrv_query($conn, $tsql);
         print_r($result);
     ?>
     <!--<form action="/website/insert.php" method="POST">
