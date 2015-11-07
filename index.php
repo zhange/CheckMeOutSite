@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <body>
+  <?php
+        echo "HELLO234";
+    ?>
     <?php
         echo "HELLO";
         $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
