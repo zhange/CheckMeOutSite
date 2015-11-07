@@ -15,7 +15,7 @@
             die(FormatErrors(sqlsrv_errors()));
         }
 
-        $lockid = $_POST['lockID']
+        $lockid = $_POST['lockId']
         $itemid = $_POST['itemId']
         $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ('000', '001');";
     }
