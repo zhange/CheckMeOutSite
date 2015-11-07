@@ -1,6 +1,4 @@
 <?php
-    $lockid = $_POST["lockID"];
-    $itemid = $_POST["itemID"];    
 
 
 
@@ -29,6 +27,10 @@
         $insertReview = sqlsrv_query($conn, $tsql);
         print_r($result);
     }
+
+
+    $lockid = $_POST["lockID"];
+    $itemid = $_POST["itemID"];    
 
     OpenConnection();
 
