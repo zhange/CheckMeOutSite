@@ -19,8 +19,8 @@
             echo "HELLO WORLD";
         }
 
-        $lockid = $_POST['lockId']
-        $itemid = $_POST['itemId']
+        $lockid = $_POST['lockID']
+        $itemid = $_POST['itemID']
         $tsql = "INSERT INTO Inventory(Lock_ID, Item_ID) VALUES ('100','200')";
     }
 
