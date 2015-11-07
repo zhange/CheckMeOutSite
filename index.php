@@ -17,7 +17,7 @@
     }
     else
         echo("COOL");
-    /*
+    
 
     // This SQL statement selects ALL from the table 'Locations'
     $sql = "SELECT * FROM [checkmeout].[Inventory]";
@@ -29,7 +29,7 @@
     }
     else{
       echo("OH NO");
-    }*/
+    }
     ?>
 
     <form action="/website/insert.php" method="POST">
