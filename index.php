@@ -24,7 +24,7 @@
      
     // Check if there are results
     $result = sqlsrv_query($conn, $tsql);
-    print_r($result);
+    print($result);
     ?>
 
     <form action="/website/insert.php" method="POST">
