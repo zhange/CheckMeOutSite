@@ -27,21 +27,4 @@
         $insertReview = sqlsrv_query($conn, $tsql);
         print_r($result);
     }
-
-    function InsertData($lockid, $itemid){
-        // $conn = OpenConnection();
-        // $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ("$lockid", "$itemid)";";);
-
-        // $insertReview = sqlsrv_query($conn, $tsql);
-        // if($insertReview == FALSE)
-        //     die(FormatErrors( sqlsrv_errors()));
-        // echo "Product Key inserted is :";   
-
-        // sqlsrv_close($conn);
-    
-    }
-
-
-    // $conn = OpenConnection();
-    // InsertData($_POST['lockID'], $_POST['itemid']);
 ?>

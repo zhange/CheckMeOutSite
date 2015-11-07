@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <form action="/website/insert.php" method="POST">
+    <?php
+
+    echo "HELLO";
+        $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
+        $userName = 'checkmeout_admin@yc4lfe5q04';
+        $userPassword = 'YHack2015';
+        $dbName = "checkmeout_db";
+        $table = "Inventory";
+
+        $connectionOptions = array("Database"=>$dbName,
+            "Uid"=>$userName, "PWD"=>$userPassword);
+        $conn = sqlsrv_connect($serverName, $connectionOptions);
+        if($conn == false){
+            echo "FUCK";
+            die(FormatErrors(sqlsrv_errors()));
+        }
+        else{
+            echo "HELLO WORLD!!!!";
+        }
+
+        //$lockid = $_POST['lockID']
+        //$itemid = $_POST['itemID']
+        $lockid = 345;
+        $itemid = 678;
+        $tsql = "INSERT INTO [checkmeout].[Inventory] VALUES ($lockid,$itemid);";
+        //Insert query
+        $insertReview = sqlsrv_query($conn, $tsql);
+        print_r($result);
+
+        ?>
+    <!--<form action="/website/insert.php" method="POST">
       <b>Enter a new lock/item Combo:</b>
       <br>Lock Number:<br>
       <input type="number" name="lockID">
@@ -32,7 +62,7 @@
       <input type="number" name="itemLink">
       <br>
       <input type="submit" name="submitItem" value="Submit">
-    </form>
+    </form>-->
 
   </body>
 </html>
