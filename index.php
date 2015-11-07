@@ -23,12 +23,13 @@
     $sql = 'SELECT * FROM [checkmeout].[Inventory]';
      
     // Check if there are results
-    if ($result = sqlsrv_query($conn, $tsql))
-    {
-      print_r($result);
+    $result = sqlsrv_query($conn, $tsql);
+    if( $result === false) {
+      die( print_r( sqlsrv_errors(), true) );
     }
-    else{
-      echo("OH NO");
+
+    while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
+        echo $row['LastName'].", ".$row['FirstName']."<br />";
     }
     ?>
 
