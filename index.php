@@ -20,9 +20,9 @@
             echo "HELLO WORLD!!!!";
         }
 
-        //$lockid = $_POST['lockID']
-        //$itemid = $_POST['itemID']
-        $tsql = "INSERT INTO [checkmeout].[Inventory] VALUES (200,300);";
+        $lockid = $_POST['lockID']
+        $itemid = $_POST['itemID']
+        $tsql = "INSERT INTO [checkmeout].[Inventory] VALUES ($lockid,$itemid);";
         //Insert query
         $insertReview = sqlsrv_query($conn, $tsql);
         print_r($result);
