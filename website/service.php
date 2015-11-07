@@ -13,7 +13,7 @@
     }
  
 // This SQL statement selects ALL from the table 'Locations'
-$sql = "SELECT * FROM [checkmeout][Inventory]";
+$sql = "SELECT * FROM [checkmeout].[Inventory]";
  
 // Check if there are results
 if ($result = sqlsrv_query($conn, $tsql))
