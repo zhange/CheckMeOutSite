@@ -27,7 +27,7 @@
         $insertReview = sqlsrv_query($conn, $tsql);
         print_r($result);
     ?>
-    <!--<form action="/website/insert.php" method="POST">
+    <form action="/website/insert.php" method="POST">
       <b>Enter a new lock/item Combo:</b>
       <br>Lock Number:<br>
       <input type="text" name="lockID">
@@ -58,7 +58,7 @@
       <input type="number" name="itemLink">
       <br>
       <input type="submit" name="submitItem" value="Submit">
-    </form>-->
+    </form>
 
   </body>
 </html>
