@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-      <form action="/website/insert.php" method="POST">
+    <form action="/website/insert.php" method="POST">
       <b>Enter a new lock/item Combo:</b>
       <br>Lock Number:<br>
       <input type="number" name="lockID">
@@ -34,5 +34,13 @@
       <input type="submit" name="submitItem" value="Submit">
     </form>
 
+    <form action="/website/delete_item.php" method="POST">
+      <b>Enter a new lock/item Combo:</b>
+      <br>Item Id:<br>
+      <input type="number" name="itemID">
+      <br>
+      <input type="submit" name="delete" value="Submit">
+      <br>
+    </form>
   </body>
 </html>
