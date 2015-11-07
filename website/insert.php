@@ -1,6 +1,7 @@
 <?php
     
     function OpenConnection(){
+        echo "WHAT";
         $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
         $userName = 'checkmeout_admin@yc4lfe5q04';
         $userPassword = 'YHack2015';
@@ -20,7 +21,7 @@
 
         $lockid = $_POST['lockId']
         $itemid = $_POST['itemId']
-        $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ('000', '001');";
+        $tsql = "USE checkmeout_db;GO INSERT INTO checkmeout_db.Inventory VALUES (100,200); GO";
     }
 
     function InsertData($lockid, $itemid){
