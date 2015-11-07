@@ -23,8 +23,7 @@
     $sql = 'SELECT * FROM [checkmeout].[Inventory]';
      
     // Check if there are results
-    $result = sql_query($conn, $tsql);
-    print($result);
+    print($sql);
     ?>
 
     <form action="/website/insert.php" method="POST">
