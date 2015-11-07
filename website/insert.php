@@ -16,24 +16,24 @@
         }
     }
 
-    function InsertData($lockid, $itemid){
-        try
-        {
-            $conn = OpenConnection();
-            $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ("$lockid", "$itemid");";);
+    // function InsertData($lockid, $itemid){
+    //     try
+    //     {
+    //         $conn = OpenConnection();
+    //         $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ("$lockid", "$itemid");";);
 
-            $insertReview = sqlsrv_query($conn, $tsql);
-            if($insertReview == FALSE)
-                die(FormatErrors( sqlsrv_errors()));
-            echo "Product Key inserted is :";   
+    //         $insertReview = sqlsrv_query($conn, $tsql);
+    //         if($insertReview == FALSE)
+    //             die(FormatErrors( sqlsrv_errors()));
+    //         echo "Product Key inserted is :";   
 
-            sqlsrv_close($conn);
-        }
-        catch(Exception $e)
-        {
-            echo("Error!");
-        }
-    }
+    //         sqlsrv_close($conn);
+    //     }
+    //     catch(Exception $e)
+    //     {
+    //         echo("Error!");
+    //     }
+    // }
 
 
     // $conn = OpenConnection();
