@@ -17,17 +17,7 @@
     }
     
 
-    // This SQL statement selects ALL from the table 'Locations'
-    $sql = "SELECT * FROM [checkmeout].[Inventory]";
-     
-    // Check if there are results
-    if ($result = sqlsrv_query($conn, $tsql))
-    {
-      print_r($result);
-    }
-    else{
-      echo("OH NO");
-    }
+    
     ?>
 
     <form action="/website/insert.php" method="POST">
