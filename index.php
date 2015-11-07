@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <?php $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
+    <?php
+        echo "HELLO";
+        $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
         $userName = 'checkmeout_admin@yc4lfe5q04';
         $userPassword = 'YHack2015';
         $dbName = "checkmeout_db";
