@@ -16,7 +16,7 @@
         }
 
         $lockid = $_POST['lockID']
-        $itemid = $_POST['itemid']
+        $itemid = $_POST['itemId']
         $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ('000', '001');";
     }
 
