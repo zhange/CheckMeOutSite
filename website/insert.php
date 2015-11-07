@@ -24,6 +24,7 @@
         $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID)
         VALUES (100, 200) GO";
         $result = sqlsrv_query($conn, $tsql);
+        print_r($result); 
     }
 
     function InsertData($lockid, $itemid){
