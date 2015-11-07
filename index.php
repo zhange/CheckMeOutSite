@@ -20,7 +20,7 @@
     
 
     // This SQL statement selects ALL from the table 'Locations'
-    $sql = 'SELECT * FROM [Inventory]';
+    $sql = 'SELECT * FROM [checkmeout].[Inventory]';
      
     // Check if there are results
     $result = sqlsrv_query($conn, $tsql);
@@ -29,7 +29,7 @@
     }
 
     while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
-        echo $row['LastName'].", ".$row['FirstName']."<br />";
+        echo $row['Lock_ID'].", ".$row['Item_ID']."<br />";
     }
     ?>
 
