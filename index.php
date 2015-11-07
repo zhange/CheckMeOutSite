@@ -24,13 +24,7 @@
      
     // Check if there are results
     $result = sqlsrv_query($conn, $tsql);
-    if( $result === false) {
-      die( print_r( sqlsrv_errors(), true) );
-    }
-
-    while( $row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC) ) {
-        echo $row['Lock_ID'].", ".$row['Item_ID']."<br />";
-    }
+    print_r($result);
     ?>
 
     <form action="/website/insert.php" method="POST">
