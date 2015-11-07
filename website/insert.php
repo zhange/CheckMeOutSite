@@ -29,4 +29,7 @@
         $insertReview = sqlsrv_query($conn, $tsql);
         print_r($result);
     }
+
+    OpenConnection();
+
 ?>
