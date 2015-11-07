@@ -17,7 +17,7 @@
 
         $lockid = $_POST['lockID']
         $itemid = $_POST['itemid']
-        $tsql = "INSERT Inventory (Lock_ID, Item_ID) VALUES ('$lockid', '$itemid');";
+        $tsql = "INSERT Inventory (Lock_ID, Item_ID) VALUES ('000', '001');";
     }
 
     function InsertData($lockid, $itemid){
