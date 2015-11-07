@@ -2,12 +2,17 @@
     
     function OpenConnection(){
         $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
-        $connectionOptions = array("Database"=>"checkmeout_db",
-            "Uid"=>"checkmeout_admin@yc4lfe5q04", "pwd"=>"YHack2015");
+        $userName = 'checkmeout_admin@yc4lfe5q04';
+        $userPassword = 'YHack2015';
+        $dbName = "checkmeout_db";
+        $table = "Inventory";
+
+        $connectionInfo = array("Database"=>$dbName, "UID"=>$userName, "PWD"=>$userPassword, "MultipleActiveResultSets"=>true);
+        
         $conn = sqlsrv_connect($serverName, $connectionOptions);
         if($conn == false){
             echo "string";
-            // die(FormatErrors(sqlsrv_errors()));
+            die(FormatErrors(sqlsrv_errors()));
         }
     }
 
