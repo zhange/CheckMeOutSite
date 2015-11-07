@@ -18,7 +18,7 @@
 
     function InsertData($lockid, $itemid){
         $conn = OpenConnection();
-        $tsql = "INSERT" checkmeout_db.Inventory "(Lock_ID, Item_ID) VALUES ("$lockid", "$itemid");";);
+        $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID) VALUES ($lockid, $itemid);";);
 
         // $insertReview = sqlsrv_query($conn, $tsql);
         // if($insertReview == FALSE)
