@@ -29,7 +29,7 @@
       <input type="number" name="itemPrice">
       <br>
       Picture Link:<br>
-      <input type="number" name="itemLink">
+      <input type="text" name="itemLink">
       <br>
       <input type="submit" name="submitItem" value="Submit">
     </form>
