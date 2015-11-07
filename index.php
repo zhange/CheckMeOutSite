@@ -22,8 +22,9 @@
     // This SQL statement selects ALL from the table 'Locations'
     $tsql = "SELECT [Lock_ID] FROM [checkmeout].[Inventory];";
     //Insert query
-    
-    echo($tsql);
+    $results = mssql_result ($tsql, $conn);
+
+    echo($results);
     ?>
 
     <form action="/website/insert.php" method="POST">
