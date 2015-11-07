@@ -20,7 +20,7 @@
     
 
     // This SQL statement selects ALL from the table 'Locations'
-    $query = mssql_query('SELECT "Lock_ID" FROM [checkmeout].[Inventory]');
+    $query = mssql_query('SELECT [Lock_ID] FROM [checkmeout].[Inventory]');
      
    if (!mssql_num_rows($query)) {
     echo 'No records found';
