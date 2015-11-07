@@ -20,10 +20,15 @@
     
 
     // This SQL statement selects ALL from the table 'Locations'
-    $sql = 'SELECT * FROM [checkmeout].[Inventory]';
+    $query = mssql_query('SELECT "Lock_ID" FROM [checkmeout].[Inventory]');
      
-    // Check if there are results
-    print($sql);
+   if (!mssql_num_rows($query)) {
+    echo 'No records found';
+   } else {
+      for ($i = 0; $i < mssql_num_rows($query); ++$i) {
+          echo mssql_result($query, $i, 'Lock_ID'), PHP_EOL;
+      }
+    }
     ?>
 
     <form action="/website/insert.php" method="POST">
