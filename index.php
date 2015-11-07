@@ -4,9 +4,9 @@
     <form action="/website/insert.php" method="POST">
       <b>Enter a new lock/item Combo:</b>
       <br>Lock Number:<br>
-      <input type="text" name="lockID">
+      <input type="number" name="lockID">
       <br>Item Id:<br>
-      <input type="text" name="itemID">
+      <input type="number" name="itemID">
       <br>
       <input type="submit" name="submitCombo" value="Submit">
       <br>
