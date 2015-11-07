@@ -21,7 +21,7 @@
 
         $lockid = $_POST['lockID']
         $itemid = $_POST['itemID']
-        $tsql = "INSERT INTO checkmeout_db.Inventory(Lock_ID, Item_ID) VALUES ('100','200')";
+        $tsql = "INSERT INTO" checkmeout_db.Inventory "(Lock_ID, Item_ID) VALUES ('100','200')";
     }
 
     function InsertData($lockid, $itemid){
