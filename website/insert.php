@@ -1,5 +1,9 @@
 <?php
-    
+    $lockid = $_POST["lockID"];
+    $itemid = $_POST["itemID"];    
+
+
+
     function OpenConnection(){
         
         $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
@@ -19,8 +23,7 @@
             echo "HELLO WORLD!!!!";
         }
 
-        $lockid = 100;
-        $itemid = 300;
+        
         $tsql = "INSERT INTO [checkmeout].[Inventory] VALUES ($lockid,$itemid);";
         //Insert query
         $insertReview = sqlsrv_query($conn, $tsql);
