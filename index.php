@@ -23,7 +23,7 @@
     $tsql = "SELECT [Lock_ID] FROM [checkmeout].[Inventory];";
     //Insert query
     
-    echo(count($tsql));
+    echo($tsql);
     ?>
 
     <form action="/website/insert.php" method="POST">
