@@ -2,7 +2,6 @@
     
     function OpenConnection(){
         
-        echo "HELLO";
         $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
         $userName = 'checkmeout_admin@yc4lfe5q04';
         $userPassword = 'YHack2015';
@@ -20,8 +19,8 @@
             echo "HELLO WORLD!!!!";
         }
 
-        $lockid = $_POST["lockID"];
-        $itemid = $_POST["itemID"];
+        $lockid = 100;
+        $itemid = 300;
         $tsql = "INSERT INTO [checkmeout].[Inventory] VALUES ($lockid,$itemid);";
         //Insert query
         $insertReview = sqlsrv_query($conn, $tsql);
