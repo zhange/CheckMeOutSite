@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
   <body>
-  HELLO
-  <?php
-        echo "HELLO234";
-    ?>
     <?php
         echo "HELLO";
         $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
@@ -16,18 +12,20 @@
         $connectionOptions = array("Database"=>$dbName,
             "Uid"=>$userName, "PWD"=>$userPassword);
         $conn = sqlsrv_connect($serverName, $connectionOptions);
-        if($conn == false)
+        if($conn == false){
+            echo "FUCK";
             die(FormatErrors(sqlsrv_errors()));
+        }
         else{
-            echo "HELLO WORLD";
+            echo "HELLO WORLD!!!!";
         }
 
-        /*$lockid = $_POST['lockID']
-        $itemid = $_POST['itemID']
-        $tsql = "INSERT checkmeout_db.Inventory (Lock_ID, Item_ID)
+        //$lockid = $_POST['lockID']
+        //$itemid = $_POST['itemID']
+        $tsql = "INSERT checkmeout_db.Inventory ("Lock_ID", "Item_ID")
         VALUES (100, 200) GO";
         $result = sqlsrv_query($conn, $tsql);
-        print_r($result);*/ 
+        print_r($result);
     ?>
     <!--<form action="/website/insert.php" method="POST">
       <b>Enter a new lock/item Combo:</b>
