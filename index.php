@@ -19,11 +19,10 @@
       // This SQL statement selects ALL from the table 'Locations'
       $query = "SELECT * FROM registration_tbl";
       $stmt = $conn->query($sql_select);
-      $registrants = $stmt->fetchAll();
       //Insert query
-      $tsql = sqlsrv_query($query);
-      print(count($tsql));
-      echo $tsql;
+      //$tsql = sqlsrv_query($query);
+      print(count($stmt));
+      echo $stmt;
     ?>
 
     <form action="/website/insert.php" method="POST">
