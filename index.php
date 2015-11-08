@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $tsql = mssql_query('SELECT [Lock_ID] FROM [Inventory]');
+      $tsql = mssql_query('SELECT * FROM [Inventory]');
       //Insert query
 
       if (!mssql_num_rows($tsql)) {
