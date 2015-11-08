@@ -15,12 +15,13 @@
           echo("OH NO");
           die(FormatErrors(sqlsrv_errors()));
       }
-      $query = "SELECT * FROM Inventory";
+      $query = "SELECT * FROM checkmeout.Inventory";
       $result = mssql_query($query);
+      echo $result;
       // This SQL statement selects ALL from the table 'Locations'
-      while($record = mssql_fetch_array($result)){
+      /*while($record = mssql_fetch_array($result)){
         echo(count($record));
-      }
+      }*/
       //Insert query
       //$tsql = sqlsrv_query($query);
       //print(count($stmt));
