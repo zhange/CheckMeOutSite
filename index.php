@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT * FROM Inventory ";
+      $query = "SELECT * FROM [Inventory] ";
       //Insert query
       $tsql = sqlsrv_query($query);
       print(count($tsql));
