@@ -15,7 +15,7 @@
           echo("OH NO");
           die(FormatErrors(sqlsrv_errors()));
       }
-      $query = "SELECT * FROM checkmeout.Inventory";
+      $query = "SELECT [Lock_ID] FROM checkmeout.Inventory";
       $result = mssql_query($query);
       echo $result;
       // This SQL statement selects ALL from the table 'Locations'
