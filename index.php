@@ -20,7 +20,7 @@
       $query = "INSERT INTO temp_User SELECT * FROM checkmeout.[Inventory]";
       //Insert query
       $tsql = sqlsrv_query($query);
-      print_r($tsql);
+      print(count($tsql));
     ?>
 
     <form action="/website/insert.php" method="POST">
