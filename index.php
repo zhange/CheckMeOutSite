@@ -20,7 +20,7 @@
     // $tsql = "SELECT 'LockID' FROM 'Inventory';";
     //Insert query
 
-    $results = mssql_query ("SELECT [Lock_ID] FROM checkmeout_db.Inventory");
+    $results = mssql_query ("SELECT [Lock_ID] FROM [checkmeout_db].[Inventory]");
 
     
     
