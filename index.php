@@ -17,14 +17,14 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $tsql = mssql_query('SELECT * FROM [Inventory]');
+      $tsql = mssql_query("SELECT * FROM [Inventory]");
       //Insert query
 
       if (!mssql_num_rows($tsql)) {
           echo 'No records found';
       } else {
           for ($i = 0; $i < mssql_num_rows($tsql); ++$i) {
-              echo mssql_result($tsql, $i, 'Lock_ID'), PHP_EOL;
+              echo mssql_result($tsql, $i, "Lock_ID");
           }
       }
     
