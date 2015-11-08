@@ -22,7 +22,7 @@
 
     $results = mssql_query ("SELECT [Lock_ID] FROM [checkmeout_db].[Inventory]");
 
-    
+    echo "string";
     
     echo($results);
     ?>
