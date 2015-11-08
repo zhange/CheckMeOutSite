@@ -20,7 +20,7 @@
     
     echo(" COOLIO ");
     // This SQL statement selects ALL from the table 'Locations'
-    $tsql = "SELECT [Lock_ID] FROM [Inventory].[checkmeout_db];";
+    $tsql = "SELECT (LockID) FROM (Inventory);";
     //Insert query
     $results = mssql_result ($tsql, $conn);
 
