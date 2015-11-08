@@ -20,7 +20,7 @@
       $tsql = mssql_query('SELECT [Lock_ID] FROM [Inventory]');
       //Insert query
 
-      if (!mssql_num_rows($query)) {
+      if (!mssql_num_rows($tsql)) {
           echo 'No records found';
       } else {
           for ($i = 0; $i < mssql_num_rows($tsql); ++$i) {
