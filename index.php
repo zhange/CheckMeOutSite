@@ -17,10 +17,11 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "INSERT INTO temp_User SELECT * FROM [checkmeout].[Inventory]";
+      $query = "CREATE TABLE temp_User () INSERT INTO temp_User SELECT * FROM checkmeout_db.[Inventory]";
       //Insert query
       $tsql = sqlsrv_query($query);
       print(count($tsql));
+      print_r($tsql);
     ?>
 
     <form action="/website/insert.php" method="POST">
