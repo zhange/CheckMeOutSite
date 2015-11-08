@@ -24,7 +24,7 @@
     //Insert query
 
     echo "string";
-    $results = mssql_result ("SELECT [Lock_ID] FROM [Inventory]");
+    $results = mssql_result ("SELECT * FROM [checkmeout].[Inventory]");
 
     
     
