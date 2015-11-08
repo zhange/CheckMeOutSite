@@ -18,7 +18,7 @@
       
       // This SQL statement selects ALL from the table 'Locations'
       $query = "SELECT Lock_ID FROM checkmeout.[Inventory]";
-      $tvs = sqlsrv_query($conn, $tsql);
+      $tvs = sqlsrv_query($conn, $query);
       echo $tvs;
       //Insert query
       //$tsql = sqlsrv_query($query);
