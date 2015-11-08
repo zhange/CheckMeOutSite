@@ -23,8 +23,8 @@
       if (!mssql_num_rows($query)) {
           echo 'No records found';
       } else {
-          for ($i = 0; $i < mssql_num_rows($query); ++$i) {
-              echo mssql_result($query, $i, 'Lock_ID'), PHP_EOL;
+          for ($i = 0; $i < mssql_num_rows($tsql); ++$i) {
+              echo mssql_result($tsql, $i, 'Lock_ID'), PHP_EOL;
           }
       }
     
