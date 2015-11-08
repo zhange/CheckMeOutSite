@@ -15,7 +15,7 @@
           echo("OH NO");
           die(FormatErrors(sqlsrv_errors()));
       }
-      $o .= '<table>';
+      $o = '<table>';
       // This SQL statement selects ALL from the table 'Locations'
       while($record = mssql_fetch_array($result)){
         $o .= '<tr><td>'.record['Lock_ID'].'</td><td>'.$record['Item_ID'].'</td></tr>'
