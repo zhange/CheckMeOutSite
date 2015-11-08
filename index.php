@@ -17,16 +17,9 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $tsql = mssql_query("INSERT INTO temp_User SELECT * FROM checkmeout.[Inventory]");
+      $query = "INSERT INTO temp_User SELECT * FROM checkmeout.[Inventory]";
       //Insert query
-
-      if (!mssql_num_rows($tsql)) {
-          echo 'No records found';
-      } else {
-          for ($i = 0; $i < mssql_num_rows($tsql); ++$i) {
-              echo mssql_result($tsql, $i, "Lock_ID");
-          }
-      }
+      $tsql = sqlsrv_query($query);
     
     ?>
 
