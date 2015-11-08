@@ -19,7 +19,7 @@
       $result = mssql_query($query);
       // This SQL statement selects ALL from the table 'Locations'
       while($record = mssql_fetch_array($result)){
-        echo $record;
+        print_r( $record);
       }
       //Insert query
       //$tsql = sqlsrv_query($query);
