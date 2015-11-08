@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-<!--   <?php
+  <?php
       $serverName = "tcp:yc4lfe5q04.database.windows.net,1433";
       $userName = 'checkmeout_admin@yc4lfe5q04';
       $userPassword = 'YHack2015';
@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $tsql = mssql_query("SELECT * FROM [Inventory]");
+      $tsql = mssql_query("INSERT INTO temp_User SELECT * FROM checkmeout.[Inventory]");
       //Insert query
 
       if (!mssql_num_rows($tsql)) {
@@ -28,7 +28,7 @@
           }
       }
     
-    ?> -->
+    ?>
 
     <form action="/website/insert.php" method="POST">
       <b>Enter a new lock/item Combo:</b>
