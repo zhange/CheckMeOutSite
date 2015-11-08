@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT * FROM registration_tbl";
+      $query = "SELECT * FROM checkmeout";
       $stmt = $conn->query($sql_select);
       echo $stmt;
       //Insert query
