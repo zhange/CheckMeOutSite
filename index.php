@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT Lock_ID FROM checkmeout.[Inventory] ";
+      $query = "SELECT Lock_ID FROM [checkmeout].[Inventory] ";
       //Insert query
       $tsql = sqlsrv_query($query);
       print(count($tsql));
