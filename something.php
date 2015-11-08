@@ -15,7 +15,7 @@
 
 
       // This SQL statement selects ALL from the table 'Locations'
-      $tsql = mssql_query("SELECT * FROM [Inventory]");
+      $tsql = mssql_query("INSERT INTO temp_User SELECT * FROM checkmeout.[Inventory] ");
       //Insert query
 
       if (!mssql_num_rows($tsql)) {
