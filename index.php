@@ -18,7 +18,8 @@
       
       // This SQL statement selects ALL from the table 'Locations'
       $query = "SELECT * FROM registration_tbl";
-      //$stmt = $conn->query($sql_select);
+      $stmt = $conn->query($sql_select);
+      echo $stmt;
       //Insert query
       //$tsql = sqlsrv_query($query);
       //print(count($stmt));
