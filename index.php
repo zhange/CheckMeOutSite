@@ -17,14 +17,17 @@
     }
     
     // This SQL statement selects ALL from the table 'Locations'
-    // $tsql = "SELECT 'LockID' FROM 'Inventory';";
+    $tsql = mssql_query('SELECT [Lock_ID] FROM [checkmeout_db].[Inventory]');
     //Insert query
 
-    $results = mssql_query ("SELECT [Lock_ID] FROM [checkmeout_db].[Inventory]");
-
-    echo "string";
-    
-    echo($results);
+    if (!mssql_num_rows($query)) {
+        echo 'No records found';
+    } else {
+        for ($i = 0; $i < mssql_num_rows($query); ++$i) {
+            echo mssql_result($query, $i, 'Lock_ID'), PHP_EOL;
+        }
+    }
+  
     ?>
 
     <form action="/website/insert.php" method="POST">
