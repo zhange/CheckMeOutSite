@@ -15,16 +15,12 @@
         echo("OH NO");
         die(FormatErrors(sqlsrv_errors()));
     }
-    else
-        echo(" COOL ");
     
-    echo(" COOLIO ");
     // This SQL statement selects ALL from the table 'Locations'
     // $tsql = "SELECT 'LockID' FROM 'Inventory';";
     //Insert query
 
-    echo "string";
-    $results = mssql_result ("SELECT [Lock_ID] FROM checkmeout_db.Inventory");
+    $results = mssql_query ("SELECT [Lock_ID] FROM checkmeout_db.Inventory");
 
     
     
