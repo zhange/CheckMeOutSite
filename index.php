@@ -22,7 +22,7 @@
     // This SQL statement selects ALL from the table 'Locations'
     // $tsql = "SELECT 'LockID' FROM 'Inventory';";
     //Insert query
-    $results = mssql_result ("SELECT [Lock_ID] FROM [checkmeout_db].[inventory]");
+    $results = mssql_result ("SELECT [Lock_ID] FROM [Inventory]");
 
     
     echo "string";
