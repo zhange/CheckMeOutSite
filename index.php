@@ -15,11 +15,12 @@
           echo("OH NO");
           die(FormatErrors(sqlsrv_errors()));
       }
-      
+      $o .= '<table>';
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT [Lock_ID], [Item_ID] FROM checkmeout.Inventory";
-      $tvs = sqlsrv_query($conn, $query);
-      echo $tvs;
+      while($record = mssql_fetch_array($result)){
+        $o .= '<tr><td>'.record['Lock_ID'].'</td><td>'.$record['Item_ID'].'</td></tr>'
+      }
+      $o .= '</table>';
       //Insert query
       //$tsql = sqlsrv_query($query);
       //print(count($stmt));
