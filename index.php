@@ -18,9 +18,9 @@
       $o = '<table>';
       // This SQL statement selects ALL from the table 'Locations'
       while($record = mssql_fetch_array($result)){
-        $o .= '<tr><td>'.record['Lock_ID'].'</td><td>'.$record['Item_ID'].'</td></tr>'
+        $o = $o.'<tr><td>'.record['Lock_ID'].'</td><td>'.$record['Item_ID'].'</td></tr>'
       }
-      $o .= '</table>';
+      $o = $o.'</table>';
       //Insert query
       //$tsql = sqlsrv_query($query);
       //print(count($stmt));
