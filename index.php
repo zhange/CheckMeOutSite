@@ -17,7 +17,9 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT * FROM [Inventory] ";
+      $query = "SELECT * FROM registration_tbl";
+      $stmt = $conn->query($sql_select);
+      $registrants = $stmt->fetchAll();
       //Insert query
       $tsql = sqlsrv_query($query);
       print(count($tsql));
