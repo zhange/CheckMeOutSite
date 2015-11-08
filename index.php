@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT [Lock_ID], [Item_ID] FROM checkmeout_db.Inventory";
+      $query = "SELECT [Lock_ID], [Item_ID] FROM checkmeout.Inventory";
       $tvs = sqlsrv_query($conn, $query);
       echo $tvs;
       //Insert query
