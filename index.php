@@ -18,8 +18,8 @@
       
       // This SQL statement selects ALL from the table 'Locations'
       $query = "SELECT * FROM checkmeout";
-      $stmt = $conn->query($sql_select);
-      echo $stmt;
+      $tvs = sqlsrv_query($conn, $tsql)
+      echo $tvs;
       //Insert query
       //$tsql = sqlsrv_query($query);
       //print(count($stmt));
