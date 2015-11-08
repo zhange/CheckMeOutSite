@@ -17,7 +17,7 @@
       }
       
       // This SQL statement selects ALL from the table 'Locations'
-      $query = "SELECT * FROM checkmeout";
+      $query = "SELECT * FROM checkmeout.[Inventory]";
       $tvs = sqlsrv_query($conn, $tsql);
       echo $tvs;
       //Insert query
