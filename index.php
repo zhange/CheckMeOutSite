@@ -15,11 +15,11 @@
           echo("OH NO");
           die(FormatErrors(sqlsrv_errors()));
       }
-      $query = "SELECT Lock_ID, Item_ID FROM Inventory";
+      $query = "SELECT * FROM Inventory";
       $result = mssql_query($query);
       // This SQL statement selects ALL from the table 'Locations'
       while($record = mssql_fetch_array($result)){
-        print_r( $record);
+        echo(count($record));
       }
       //Insert query
       //$tsql = sqlsrv_query($query);
